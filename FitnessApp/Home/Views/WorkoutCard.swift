@@ -27,6 +27,8 @@ struct WorkoutCard: View {
                     Text(workout.title)
                         .font(.title3)
                         .bold()
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     Spacer()
                     Text(workout.duration)
                 }
